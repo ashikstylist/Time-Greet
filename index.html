@@ -1,151 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
-    
-	    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-    <title>Time-Greet</title>
-	 <style>
-      body{
-        background: url("https://salesandservicetireandsuspension.com/wp-content/uploads/parser/geometric-wallpapers-1.png");
-        background-repeat: no-repeat;
-        background-position: center;
-		font-family: 'Shadows Into Light', cursive;
-              }
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Bootstrap CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+            integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+            crossorigin="anonymous"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap"
+            rel="stylesheet"
+        />
 
-              .float-up {
-            -webkit-animation-duration:2s;
-            -moz-animation-duration:2s;
-            -o-animation-duration:2s;
-            animation-duration:2s;
-            -webkit-animation-name:float-up;
-            -moz-animation-name:float-up;
-            -o-animation-name:float-up;
-            animation-name:float-up;
- -webkit-animation-iteration-count:1;
-            -moz-animation-iteration-count:1;
-            -o-animation-iteration-count:1;
-            animation-iteration-count:1;
-            -webkit-animation-timing-function:ease-out;
-            -moz-animation-timing-function:ease-out;
-            -o-animation-timing-function:ease-out;
-            animation-timing-function:ease-out;
- -webkit-animation-fill-mode:forwards;
-            -moz-animation-fill-mode:forwards;
-            -o-animation-fill-mode:forwards;
-            animation-fill-mode:forwards;
-            position:absolute;
-            top:500px;
-        }
- @-webkit-keyframes float-up {
-            0% {
-                top:500px;
-                opacity:0;
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <title>Time-Greet</title>
+        <style>
+            body {
+                background: url("https://salesandservicetireandsuspension.com/wp-content/uploads/parser/geometric-wallpapers-1.png");
+                background-repeat: no-repeat;
+                background-position: center;
+                font-family: "Shadows Into Light", cursive;
             }
-            25% {
-                opacity:1;
-            }
-            35% {
-                top:-20px;
-            }
-            100% {
-                top:60px;
-            }
-        }
-  @-moz-keyframes float-up {
-            0% {
-                top:500px;
-                opacity:0;
-            }
-            25% {
-                opacity:1;
-            }
-            35% {
-                top:-20px;
-            }
-            100% {
-                top:60px;
-            }
-        }
- @-o-keyframes float-up {
-            0% {
-                top:500px;
-                opacity:0;
-            }
-            25% {
-                opacity:1;
-            }
-            35% {
-                top:-20px;
-            }
-            100% {
-                top:60px;
-            }
-        }
- @-keyframes float-up {
-            0% {
-                top:500px;
-                opacity:0;
-            }
-            25% {
-                opacity:1;
-            }
-            35% {
-                top:-20px;
-            }
-            100% {
-                top:60px;
-            }
-        }
-</style>
-</head>
-<body>
-    
-  <div class="card float-up" style="background-color: white;max-width: 25rem;position:relative;margin:auto;top:10vh;left:0;bottom:0;right:0; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" >
-      <div id="img" ></div>
-      <div class="card-body">
-        <p id="greet" style="font-size: 30px;" class="card-text text-center" ></p>
-        <p  id="time" style="font-family: 'Oswald', sans-serif;" class="card-text text-center" ></p>
-      </div>
-    </div>
 
+            .float-up {
+                -webkit-animation-duration: 2s;
+                -moz-animation-duration: 2s;
+                -o-animation-duration: 2s;
+                animation-duration: 2s;
+                -webkit-animation-name: float-up;
+                -moz-animation-name: float-up;
+                -o-animation-name: float-up;
+                animation-name: float-up;
+                -webkit-animation-iteration-count: 1;
+                -moz-animation-iteration-count: 1;
+                -o-animation-iteration-count: 1;
+                animation-iteration-count: 1;
+                -webkit-animation-timing-function: ease-out;
+                -moz-animation-timing-function: ease-out;
+                -o-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+                -webkit-animation-fill-mode: forwards;
+                -moz-animation-fill-mode: forwards;
+                -o-animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
+                position: absolute;
+                top: 500px;
+            }
+            @-webkit-keyframes float-up {
+                0% {
+                    top: 500px;
+                    opacity: 0;
+                }
+                25% {
+                    opacity: 1;
+                }
+                35% {
+                    top: -20px;
+                }
+                100% {
+                    top: 60px;
+                }
+            }
+            @-moz-keyframes float-up {
+                0% {
+                    top: 500px;
+                    opacity: 0;
+                }
+                25% {
+                    opacity: 1;
+                }
+                35% {
+                    top: -20px;
+                }
+                100% {
+                    top: 60px;
+                }
+            }
+            @-o-keyframes float-up {
+                0% {
+                    top: 500px;
+                    opacity: 0;
+                }
+                25% {
+                    opacity: 1;
+                }
+                35% {
+                    top: -20px;
+                }
+                100% {
+                    top: 60px;
+                }
+            }
+            @-keyframes float-up {
+                0% {
+                    top: 500px;
+                    opacity: 0;
+                }
+                25% {
+                    opacity: 1;
+                }
+                35% {
+                    top: -20px;
+                }
+                100% {
+                    top: 60px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div
+            class="card float-up"
+            style="
+                background-color: white;
+                max-width: 25rem;
+                position: relative;
+                margin: auto;
+                top: 10vh;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+                    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            "
+        >
+            <div id="img"></div>
+            <div class="card-body">
+                <p
+                    id="greet"
+                    style="font-size: 30px"
+                    class="card-text text-center"
+                ></p>
+                <p
+                    id="time"
+                    style="font-family: 'Oswald', sans-serif"
+                    class="card-text text-center"
+                ></p>
+            </div>
+        </div>
 
-
-
-<script>
-var myDate = new Date();
+        <script>
+            var myDate = new Date();
             var hrs = myDate.getHours();
-            if (hrs < 12){
-              greet = 'Good Morning';
-              img='morning.jpg';
-            }
-             
-            else if (hrs >= 12 && hrs < 16){
-              greet = 'Good Afternoon';
-              img='afternoon.png';
+            const year = myDate.getFullYear();
+            const month = myDate.getMonth() + 1;
+            const day = myDate.getDate();
+            const minute = myDate.getMinutes();
+            const second = myDate.getSeconds();
+            const amPm = hrs < 12 ? "AM" : "PM";
 
-            }
-
-            else if (hrs >= 16 && hrs <= 18){
-              greet = 'Good Evening';
-              img='evening.jpg';
+            if (hrs > 12) {
+                hrs -= 12;
             }
 
-      
+            const dateTimeStr = `${month}/${day}/${year} ${hrs}:${minute}:${second} ${amPm}`;
 
-            else if (hrs > 18 && hrs <= 24){
-              greet = 'Good Night';
-              img='night.jpg';
+            if (hrs < 12) {
+                greet = "Good Morning";
+                img = "morning.jpg";
+            } else if (hrs >= 12 && hrs < 16) {
+                greet = "Good Afternoon";
+                img = "afternoon.png";
+            } else if (hrs >= 16 && hrs <= 18) {
+                greet = "Good Evening";
+                img = "evening.jpg";
+            } else if (hrs > 18 && hrs <= 24) {
+                greet = "Good Night";
+                img = "night.jpg";
             }
-            document.getElementById('img').innerHTML = "<img src='img/"+img+"' class='card-img-top' alt='...'>" ;
-            document.getElementById('greet').innerHTML = '<b>' + greet + '</b>';
-            document.getElementById('time').innerHTML =   myDate ;
-</script> 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-</body>
+            document.getElementById("img").innerHTML =
+                "<img src='img/" + img + "' class='card-img-top' alt='...'>";
+            document.getElementById("greet").innerHTML = "<b>" + greet + "</b>";
+            document.getElementById("time").innerText = dateTimeStr;
+        </script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+            crossorigin="anonymous"
+        ></script>
+    </body>
 </html>
